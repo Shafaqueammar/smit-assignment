@@ -1,0 +1,223 @@
+CSS
+    .box{
+        width: auto;
+        height: 300px;
+        background-color:skyblue;
+        font-size: 30px;
+        color: white;
+       text-align: center;
+    
+    }
+    #f6{
+        color: black;
+        font-family:sans-serif;
+        font-weight: 200;
+        font-size: 35px;
+    }
+    .s1 {
+        padding: 80px 13% 70px;
+       
+    
+    }
+    
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+        gap: 3.5rem;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        /* bottom: 0; */
+    }
+    
+    .footer-content h4 {
+        color : black;
+        margin-bottom: 1.5rem;
+        font-size: 20px;
+    }
+    
+    .footer-content li {
+        margin-bottom: 16px;
+        list-style-type: none;
+    }
+    
+    
+    .footer-content li a {
+        display: block;
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        transition: all .40s ease;
+        text-decoration: none;
+    }
+    
+    .footer-content li a:hover {
+        transform: translateY(-3px) translateX(-5px);
+        color: black;
+    }
+    
+    .footer-content p {
+        color: black;
+        font-size: 20px;
+        line-height: 30px;
+        margin: 20px 0;
+        font-weight: 200;
+    }
+    
+    .icons a {
+        display: inline block;
+        font-size: 22px;
+        color: #ed1c24;
+        margin-right: 17px;
+        transition: all.40s ease;
+    }
+    
+    .icons a:hover {
+        color: black;
+        transform: translateY(-3px) translateX(-5px);
+    }
+    
+    #icons {
+        height: 28px;
+        width: 28px;
+        float: inline-end;
+    }
+    
+    .fig {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        padding: 1em;
+    }
+    
+    .animated-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 16px 36px;
+        border: 4px solid;
+        border-color: transparent;
+        font-size: 16px;
+        background-color: inherit;
+        border-radius: 100px;
+        font-weight: 600;
+        color: skyblue;
+        box-shadow: 0 0 0 2px skyblue;
+        cursor: pointer;
+        overflow: hidden;
+        width: 120px;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      
+      .animated-button svg {
+        position: absolute;
+        width: 24px;
+        fill: skyblue;
+        z-index: 9;
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      
+      .animated-button .arr-1 {
+        right: 16px;
+      }
+      
+      .animated-button .arr-2 {
+        left: -25%;
+      }
+      
+      .animated-button .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background-color: skyblue;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      
+      .animated-button .text {
+        position: relative;
+        z-index: 1;
+        transform: translateX(-12px);
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      
+      .animated-button:hover {
+        box-shadow: 0 0 0 12px transparent;
+        color: #212121;
+        border-radius: 12px;
+      }
+      
+      .animated-button:hover .arr-1 {
+        right: -25%;
+      }
+      
+      .animated-button:hover .arr-2 {
+        left: 16px;
+      }
+      
+      .animated-button:hover .text {
+        transform: translateX(12px);
+      }
+      
+      .animated-button:hover svg {
+        fill: #212121;
+      }
+      
+      .animated-button:active {
+        scale: 0.95;
+        box-shadow: 0 0 0 4px skyblue;
+      }
+      
+      .animated-button:hover .circle {
+        width: 220px;
+        height: 220px;
+        opacity: 1;
+      }
+      .nav-link:hover{
+        background-color: skyblue !important;
+      }
+      .navbar-brand:hover{
+        background-color: skyblue !important;
+      }
+          
+
+
+    /* section 3 */
+/* transition */
+
+.transition-button {
+  background-color: #42ece4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+.transition-button:hover {
+  background-color: #3bd9f5;
+  transform: translateY(-5px);
+}
+
+.transition-button:active {
+  background-color: #4ae8f3;
+  transform: translateY(5px);
+}
+
+
+
+/* transform       */
+.transform-button {
+  transition: transform 0.5s ease-in-out;
+}
+
+.transform-button:hover {
+  transform: scale(1.2) rotate(360deg);
+}
